@@ -9,6 +9,7 @@ var gulp     = require('gulp')
 
 // Call Jade to compile Templates
 module.exports = gulp.task('jade', function () {
+  console.log(paths.source.files.jade);
   return gulp.src(paths.source.files.jade)
     .pipe(plumber())
     .pipe(jade({

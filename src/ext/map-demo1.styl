@@ -1,0 +1,38 @@
+html,body,#map
+    height 99%
+    overflow hidden
+
+@keyframes imgfadein
+    from
+        opacity 0
+    to
+        opacity 1
+    
+#map
+    top 0
+    left 0
+
+.debug-border .geo-tile-container:before
+    content ""
+    box-sizing inherit
+    border 2px solid rgba(0,0,0,0.5)
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    z-index 1
+    user-select none
+
+.debug-label .geo-tile-container:after
+    content attr(tile-reference)
+    position absolute
+    top 5px
+    left 10px
+    font-size 30px
+    line-height 1.3em
+    color black
+    user-select none
+
+.fade-image .geo-tile-container img
+    animation imgfadein 2s forwards

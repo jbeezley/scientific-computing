@@ -1,0 +1,37 @@
+section
+    section
+        h3 What are the unique challenges in web programming?
+
+    section
+        h3 The "big data" problem at a smaller scale
+        ul
+            li.fragment Limited not by memory but by network bandwidth
+            li.fragment Need heuristics to pull out approximate answers quickly
+            li.fragment Streaming interfaces to process data as it arrives
+            li.fragment Unlike server applications, you can't throw more/bigger computers at the problem
+
+    section
+        h3 Many different target environments
+        ul
+            li.fragment Many different browsers with varying degrees of language support
+            li.fragment Users may be stuck with an old browser due to security restrictions
+            li.fragment Mobile/desktop require different interactions and layouts
+
+    section
+        h3 Browser security restrictions
+        ul
+            li.fragment No direct access to user's files
+            li.fragment Heavily restricted ability to share data across different origins
+            li.fragment Limited ability for multiprocessing (Web Workers) all other processing occurs on the UI thread
+
+    section
+        h3 Web users are spoiled
+        ul
+            li.fragment People expect instant feedback and interactive design
+            li.fragment Load time as small as 100ms bias users against the application
+            li.fragment Applications need to scale across many different devices
+
+    section
+        h3 Also...
+        img.fragment(src="img/Javascript_bad_parts.jpg")
+

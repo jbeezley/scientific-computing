@@ -7,9 +7,10 @@ module.exports = {
         slides: 'src/slides/*.jade',
         js: 'src/js/**/*.js',
         styl: 'src/styl/**/*.styl',
+        styliframe: 'src/ext/*.styl',
         img: 'src/img/**/*',
         files: {
-          jade: 'src/templates/index.jade',
+          jade: 'src/templates/*.jade',
           styl: 'src/styl/main.styl',
           notes: 'src/js/vendor/notes/notes.html'
         }
@@ -27,6 +28,7 @@ module.exports = {
       html: './build/',
       js: 'build/js',
       css: 'build/css',
+      cssiframe: 'build/css',
       img: 'build/img',
       notes: 'build/js/vendor/notes/'
     },

@@ -8,5 +8,6 @@ module.exports = gulp.task('watch', function () {
   gulp.watch([paths.source.slides, paths.source.templates], ['jade']);
   gulp.watch(paths.source.js, ['js']);
   gulp.watch(paths.source.styl, ['stylus']);
+  gulp.watch(paths.source.styliframe, ['stylus-iframe']);
   gulp.watch(paths.source.img, ['imagemin']);
 });
